@@ -1,0 +1,10 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Simple static portfolio scaffold",
+  "scripts": {
+    "start": "npx live-server --port=3000"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

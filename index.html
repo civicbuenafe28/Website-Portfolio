@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Victor A. Buenafe - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="preload" as="image" href="assets/images/civic.jpg">
+</head>
+<body>
+    <!-- Static patterns -->
+    <div class="static-pattern"></div>
+    <div class="hex-pattern"></div>
+    
+    <!-- Animated background shapes -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+    
+    <!-- Grid overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">MY PORTFOLIO</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero-profile">
+            <div class="profile-image-wrapper">
+                <img src="assets/images/civic.jpg" alt="Carl Victor A. Buenafe" class="profile-image" width="180" height="180">
+            </div>
+        </div>
+        <h1 class="hero-title">CARL VICTOR A. BUENAFE</h1>
+        <p class="hero-subtitle">B.S. Computer Science Student | Software Engineering Specialist</p>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">1.28</div>
+                <div class="stat-label">Latest GPA</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3rd</div>
+                <div class="stat-label">Current Year</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Tech Skills</div>
+            </div>
+        </div>
+        <div class="hero-buttons">
+            <a href="#projects" class="cta-button">View Projects</a>
+            <a href="#contact" class="cta-button cta-secondary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="glitch">EDUCATION</h2>
+        <div class="menu-container">
+            <div class="menu-category">
+                <h3>Manuel S. Enverga University Foundation</h3>
+                <ul class="menu-list">
+                    <li>
+                        <a href="#msu">
+                            <span class="menu-item-name">Manuel S. Enverga University Foundation - Lucena City</span>
+                            <span class="menu-item-price">2023-Present</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#degree">
+                            <span class="menu-item-name">BS Computer Science - Software Engineering Specialization</span>
+                            <span class="menu-item-price">Main Campus</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#first-year-1">
+                            <span class="menu-item-name">First Year (1st Sem) - Dean's Lister</span>
+                            <span class="menu-item-price">1.63 GPA</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#first-year-2">
+                            <span class="menu-item-name">First Year (2nd Sem) - University Scholar</span>
+                            <span class="menu-item-price">1.25 GPA</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#second-year-1">
+                            <span class="menu-item-name">Second Year (1st Sem) - College Scholar</span>
+                            <span class="menu-item-price">1.43 GPA</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#second-year-2">
+                            <span class="menu-item-name">Second Year (2nd Sem) - University Scholar</span>
+                            <span class="menu-item-price">1.28 GPA</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="menu-category">
+                <h3>Quezon National High School</h3>
+                <ul class="menu-list">
+                    <li>
+                        <a href="#quezon-national">
+                            <span class="menu-item-name">Quezon National High School</span>
+                            <span class="menu-item-price">2020–2023</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#jhs-honors">
+                            <span class="menu-item-name">Junior High — With High Honors</span>
+                            <span class="menu-item-price">Grade 10</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#shs-honors-11">
+                            <span class="menu-item-name">Senior High — With High Honors</span>
+                            <span class="menu-item-price">Grade 11</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#shs-honors-12">
+                            <span class="menu-item-name">Senior High — With High Honors</span>
+                            <span class="menu-item-price">Grade 12</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>Maryhill College</h3>
+                <ul class="menu-list">
+                    <li>
+                        <a href="#maryhill">
+                            <span class="menu-item-name">Junior High School (Grades 7–9)</span>
+                            <span class="menu-item-price">2017–2020</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>Lucena East II Elementary School</h3>
+                <ul class="menu-list">
+                    <li>
+                        <a href="#lucena-east">
+                            <span class="menu-item-name">Elementary Education</span>
+                            <span class="menu-item-price">2010–2017</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#elementary-honors">
+                            <span class="menu-item-name">Academic Honors</span>
+                            <span class="menu-item-price">Grade 5 (2015)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="glitch">SKILLS & COMPETENCIES</h2>
+        <div class="specialty-grid">
+            <div class="specialty-card">
+                <div class="specialty-badge">Core</div>
+                <div class="specialty-icon">💻</div>
+                <h3>Software Development</h3>
+                <p>Proficient in building applications using modern programming languages including Python, Java, C++, Flutter, and Swift. Experience in full-stack development with strong foundations in software engineering principles.</p>
+            </div>
+            
+            <div class="specialty-card">
+                <div class="specialty-badge">Technical</div>
+                <div class="specialty-icon">🗄️</div>
+                <h3>Database & Systems</h3>
+                <p>Skilled in database management and design, computer proficiency across multiple platforms, and app development for mobile and desktop environments. Strong understanding of system architecture and optimization.</p>
+            </div>
+            
+            <div class="specialty-card">
+                <div class="specialty-badge">Professional</div>
+                <div class="specialty-icon">🎯</div>
+                <h3>Problem Solving</h3>
+                <p>Expertise in time management, multitasking, and critical thinking. Strong problem-solving abilities combined with effective team collaboration skills. Proficient in Microsoft Office suite (Word, Excel, PowerPoint).</p>
+            </div>
+            
+            <div class="specialty-card">
+                <div class="specialty-badge">Leadership</div>
+                <div class="specialty-icon">🤝</div>
+                <h3>Event Management</h3>
+                <p>Passionate about combining event management and technical knowledge to deliver well-organized and innovative activities. Experience in inspiring and empowering participants through technology-driven solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="glitch">PROJECTS</h2>
+        <div class="specialty-grid">
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">Mobile App</div>
+                <div class="specialty-icon">🚗</div>
+                <h3>Drive-Now</h3>
+                <p>A final project in Mobile Application Development using SwiftUI.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Swift</span>
+                    <span class="tech-tag">SwiftUI</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Drive-Now" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 1 · Updated Nov 23, 2025</span>
+                </p>
+            </div>
+
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">Mobile App</div>
+                <div class="specialty-icon">📱</div>
+                <h3>Meal-Planner</h3>
+                <p>A functional UI app implemented from Xcode using SwiftUI.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Swift</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Meal-Planner" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 0 · Updated Oct 12, 2025</span>
+                </p>
+            </div>
+
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">Mobile App</div>
+                <div class="specialty-icon">📱</div>
+                <h3>Digital-Resume-UI</h3>
+                <p>An activity project from Mobile Application Development using SwiftUI.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Swift</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Digital-Resume-UI" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 0 · Updated Oct 12, 2025</span>
+                </p>
+            </div>
+
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">Web / Backend</div>
+                <div class="specialty-icon">🗄️</div>
+                <h3>Student-Information-System</h3>
+                <p>A final activity for Object Oriented Programming implemented in Java.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Student-Information-System" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 0 · Updated Jun 03, 2025</span>
+                </p>
+            </div>
+
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">Desktop</div>
+                <div class="specialty-icon">💼</div>
+                <h3>Employee-Salary-System</h3>
+                <p>An object-oriented project using Java for employee salary management.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Employee-Salary-System" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 0 · Updated Jun 03, 2025</span>
+                </p>
+            </div>
+
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">Utility</div>
+                <div class="specialty-icon">📐</div>
+                <h3>Probability-Calculator</h3>
+                <p>A final project from Discrete Structures using Java with UI design.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Probability-Calculator" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 1 · Updated Jun 03, 2025</span>
+                </p>
+            </div>
+
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">Data</div>
+                <div class="specialty-icon">🧾</div>
+                <h3>Honda-Civic-History-Management-System</h3>
+                <p>A semi-final project using Python and SQL.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">SQL</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Honda-Civic-History-Management-System" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 0 · Updated Jun 03, 2025</span>
+                </p>
+            </div>
+
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">Desktop</div>
+                <div class="specialty-icon">🏨</div>
+                <h3>Hotel-Room-Reservation</h3>
+                <p>A final project that handles customer reservations using Python and SQL with GUI design from CP102 class.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Hotel-Room-Reservation" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 0 · Updated Jun 03, 2025</span>
+                </p>
+            </div>
+
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">Tool</div>
+                <div class="specialty-icon">🔧</div>
+                <h3>Unit-Converter-GUI</h3>
+                <p>A Python activity from Computer Programming 2 (CP102 class).</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Unit-Converter-GUI" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 0 · Updated Jun 03, 2025</span>
+                </p>
+            </div>
+
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">Game</div>
+                <div class="specialty-icon">🎮</div>
+                <h3>Python--Custom-Flappy-Bird-Game</h3>
+                <p>A final project from Computer Programming 1 (CP101 class).</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Python--Custom-Flappy-Bird-Game" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 1 · Updated Jun 03, 2025</span>
+                </p>
+            </div>
+
+            <div class="specialty-card project-card">
+                <div class="specialty-badge">App</div>
+                <div class="specialty-icon">📦</div>
+                <h3>EUnissentials</h3>
+                <p>A final project from Application Development and Emerging Technologies (Dart).</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Dart</span>
+                </div>
+                <p style="margin-top:0.75rem">
+                    <a href="https://github.com/civicbuenafe28/Eunissentials" class="cta-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <span style="margin-left:.6rem;color:var(--text-secondary);font-size:0.95rem;">★ 1 · Updated May 29, 2025</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Projects → Certifications Subsection -->
+        <div class="projects-subsection">
+            <h3 class="glitch projects-subtitle">CERTIFICATIONS</h3>
+
+            <div class="cert-grid">
+                <div class="cert-card project-card">
+                    <div class="cert-thumb">
+                        <img src="assets/images/Buenafe - System Validation - Automata and Behavioural Equivalences Certificate.pdf.jpg" alt="System Validation — Automata &amp; Behavioural Equivalences">
+                    </div>
+                    <h3>System Validation — Automata &amp; Behavioural Equivalences</h3>
+                </div>
+
+                <div class="cert-card project-card">
+                    <div class="cert-thumb">
+                        <img src="assets/images/Buenafe - Introduction to Relational Databases (RDBMS) Certificate.pdf.jpg" alt="Introduction to Relational Databases (RDBMS)">
+                    </div>
+                    <h3>Introduction to Relational Databases (RDBMS)</h3>
+                </div>
+
+                <div class="cert-card project-card">
+                    <div class="cert-thumb">
+                        <img src="assets/images/Buenafe - Flutter and Dart Developing iOS, Android, and Mobile Apps Certificate.pdf.jpg" alt="Flutter &amp; Dart — Developing iOS/Android Apps">
+                    </div>
+                    <h3>Flutter &amp; Dart — Developing iOS/Android Apps</h3>
+                </div>
+
+                <div class="cert-card project-card">
+                    <div class="cert-thumb">
+                        <img src="assets/images/Buenafe - Ethics of Artificial Intelligence Certificate.pdf.jpg" alt="Ethics of Artificial Intelligence">
+                    </div>
+                    <h3>Ethics of Artificial Intelligence</h3>
+                </div>
+
+                <div class="cert-card project-card">
+                    <div class="cert-thumb">
+                        <img src="assets/images/Buenafe - Dynamic Programming, Greedy Algorithms Certificate.jpg" alt="Dynamic Programming &amp; Greedy Algorithms">
+                    </div>
+                    <h3>Dynamic Programming &amp; Greedy Algorithms</h3>
+                </div>
+
+                <div class="cert-card project-card">
+                    <div class="cert-thumb">
+                        <img src="assets/images/Buenafe - Data Privacy and Protection Standards Certificate.jpg" alt="Data Privacy &amp; Protection Standards">
+                    </div>
+                    <h3>Data Privacy &amp; Protection Standards</h3>
+                </div>
+
+                <div class="cert-card project-card">
+                    <div class="cert-thumb">
+                        <img src="assets/images/Buenafe - Create the User Interface with SwiftUI Certificate.jpg" alt="Create the User Interface with SwiftUI">
+                    </div>
+                    <h3>Create the User Interface with SwiftUI</h3>
+                </div>
+
+                <div class="cert-card project-card">
+                    <div class="cert-thumb">
+                        <img src="assets/images/Buenafe - Foundations of Swift and SwiftUI Certificate.pdf.jpg" alt="Foundations of Swift and SwiftUI">
+                    </div>
+                    <h3>Foundations of Swift and SwiftUI</h3>
+                </div>
+
+                <div class="cert-card project-card">
+                    <div class="cert-thumb">
+                        <img src="assets/images/Buenafe - Cisco Networking Essentials Certificate.jpg" alt="Cisco Networking Essentials">
+                    </div>
+                    <h3>Cisco Networking Essentials</h3>
+                </div>
+
+                <div class="cert-card project-card">
+                    <div class="cert-thumb">
+                        <img src="assets/images/Buenafe - Architecture Assembler Language Part 1 Certificate.jpg" alt="Architecture Assembler Language — Part 1">
+                    </div>
+                    <h3>Architecture Assembler Language — Part 1</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="glitch">ABOUT ME</h2>
+        
+        <div class="about-tabs">
+            <button class="tab-button active" onclick="showTab('story')">Objective</button>
+            <button class="tab-button" onclick="showTab('mission')">Background</button>
+            <button class="tab-button" onclick="showTab('technology')">Goals</button>
+        </div>
+        
+        <div id="story" class="tab-content active">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>My Professional Objective</h3>
+                    <p>Aspiring software engineer committed to mastering full-stack development and creating applications that bridge great design with powerful functionality.</p>
+                    <br>
+                    <p>Eager to apply my Computer Science knowledge in Software Engineering to develop innovative programs and contribute to projects that make a meaningful impact.</p>
+                    <br>
+                    <p>Passionate about combining strong frontend design principles with robust backend architecture, continuously expanding my technical expertise while maintaining academic excellence and collaborative teamwork.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/Objective Picture.avif" alt="Nexus Brew Coffee Shop">
+                </div>
+            </div>
+        </div>
+        
+        <div id="mission" class="tab-content">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Academic Excellence & Growth</h3>
+                    <p>Currently pursuing Bachelor of Science in Computer Science with Specialization in Software Engineering at Manuel S. Enverga University Foundation, maintaining consistent academic excellence with Dean's List and University Scholar distinctions.</p>
+                    <br>
+                    <p>Throughout my academic journey from elementary school to university, I have consistently demonstrated strong performance, earning honors and recognition. My educational path has been marked by dedication, perseverance, and a genuine passion for learning.</p>
+                    <br>
+                    <p>From Lucena East II Elementary School to Quezon National High School and now at university level, I have built a solid foundation in both technical skills and personal development, preparing me for the challenges of the tech industry.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/Background logo.jpg" alt="Coffee Roasting Process">
+                </div>
+            </div>
+        </div>
+        
+        <div id="technology" class="tab-content">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Career Goals & Aspirations</h3>
+                    <p>To become a skilled full-stack software engineer capable of designing intuitive user interfaces and architecting scalable backend systems. I aim to master multiple programming languages and frameworks while contributing to innovative projects that solve real-world problems and make a positive societal impact.</p>
+                    <br>
+                    <p>I am committed to continuous learning and professional growth, staying at the forefront of emerging technologies and development practices. My goal is to develop expertise that allows me to lead technical initiatives and mentor fellow developers in creating robust, maintainable applications.</p>
+                    <br>
+                    <p>Ultimately, I envision myself as a versatile engineer who can bridge the gap between exceptional frontend design and powerful backend functionality, delivering comprehensive solutions that users love and systems that scale with excellence.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/Goal Picture.avif" alt="Coffee Technology">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="glitch">CONTACT</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <strong>Location</strong><br>
+                        14 Edaño St., Barangay 9<br>
+                        Lucena City, Philippines
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-text">
+                        <strong>Phone</strong><br>
+                        +63-928-485-8309
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-text">
+                        <strong>Email</strong><br>
+                        carlvictor328@gmail.com
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">🎓</div>
+                    <div class="info-text">
+                        <strong>University</strong><br>
+                        Manuel S. Enverga University<br>
+                        Foundation - Lucena City
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/carl-victor-buenafe-3b9b0a2b8/" class="social-link social-link--linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <span class="social-icon" aria-hidden="true">in</span>
+                        <span class="social-label">LinkedIn</span>
+                    </a>
+                    <a href="https://www.facebook.com/civicbuenafe28" class="social-link social-link--facebook" target="_blank" rel="noopener" aria-label="Facebook">
+                        <span class="social-icon" aria-hidden="true">fb</span>
+                        <span class="social-label">Facebook</span>
+                    </a>
+                    <a href="https://x.com/civicbuenafe28" class="social-link social-link--twitter" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                        <span class="social-icon" aria-hidden="true">x</span>
+                        <span class="social-label">X</span>
+                    </a>
+                    <a href="https://www.instagram.com/civicbuenafe28" class="social-link social-link--instagram" target="_blank" rel="noopener" aria-label="Instagram">
+                        <span class="social-icon" aria-hidden="true">ig</span>
+                        <span class="social-label">Instagram</span>
+                    </a>
+                    <a href="https://github.com/civicbuenafe28" class="social-link social-link--github" target="_blank" rel="noopener" aria-label="GitHub">
+                        <span class="social-icon" aria-hidden="true">git</span>
+                        <span class="social-label">GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Lightbox Modal for Certifications -->
+    <div id="image-modal" class="image-modal" aria-hidden="true">
+        <button class="image-modal-close" aria-label="Close image">&times;</button>
+        <img id="image-modal-img" class="image-modal-content" alt="Certification full view">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#careers">Careers</a>
+            </div>
+            <div class="copyright">
+            © 2025 Carl Victor A. Buenafe. All rights reserved. <a href="" target="_blank" rel="nofollow noopener"></a></div>
+        </div>
+    </footer>
+<script src="scripts/main.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Carl Victor Buenafe</title>
-<meta name="description" content="Carl Victor Buenafe — Computer Science student (Software Engineering) focused on frontend development and QA testing. Open to internships.">
+<meta name="description" content="Carl Victor Buenafe, BS Computer Science student (Software Engineering) with an interest in Frontend Development and QA Testing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -21,7 +21,8 @@
     </a>
     <nav aria-label="Primary">
       <ul class="nav__links" id="nav-links">
-        <li><a href="#work">Work</a></li>
+        <li><a href="#about">Profile</a></li>
+        <li><a href="#work">Project</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#certifications">Certifications</a></li>
@@ -44,11 +45,11 @@
   <!-- HERO -->
   <section class="hero wrap">
     <div class="hero__text">
-      <p class="status"><span class="status__dot" aria-hidden="true"></span>Open to internships · Frontend &amp; QA</p>
+      <p class="status"><span class="status__dot" aria-hidden="true"></span>BS Computer Science Student</p>
       <h1 class="hero__title">Carl Victor<br>Buenafe</h1>
-      <p class="hero__lede">Computer Science student majoring in Software Engineering. I build responsive web and mobile interfaces, then test them with manual and automated checks so bugs get caught before users find them.</p>
+      <p class="hero__lede">Computer Science student majoring in Software Engineering, with a strong interest in Frontend Development and Quality Assurance (QA) Testing.</p>
       <div class="hero__cta">
-        <a class="btn btn--primary" href="#work">See my work</a>
+        <a class="btn btn--primary" href="#work">View project</a>
         <a class="btn btn--ghost" href="assets/docs/Buenafe-Resume-2026.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
       </div>
       <dl class="facts">
@@ -64,13 +65,31 @@
       </figure>
       <div class="testrun" aria-label="Profile summary written as a test run">
         <div class="testrun__bar"><span></span><span></span><span></span><code>npm test profile</code></div>
-<pre><span class="t-dim">PASS</span>  <span class="t-file">carl.spec.ts</span>
-  <span class="t-ok">✓</span> ships responsive UIs <span class="t-dim">(Flutter, web)</span>
-  <span class="t-ok">✓</span> writes & runs test cases
-  <span class="t-ok">✓</span> designs in Figma first
-  <span class="t-ok">✓</span> documents what he builds
+<pre><span class="t-dim">PASS</span>  <span class="t-file">profile.spec</span>
+  <span class="t-ok">✓</span> responsive web &amp; mobile UIs
+  <span class="t-ok">✓</span> manual &amp; automated testing
+  <span class="t-ok">✓</span> UI/UX design in Figma
+  <span class="t-ok">✓</span> technical documentation
 
 <span class="t-dim">Tests:</span> <span class="t-ok">4 passed</span>, 4 total<span class="caret" aria-hidden="true"></span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / WHAT I DO -->
+  <section class="section section--alt" id="about">
+    <div class="wrap about">
+      <header class="section__head">
+        <p class="eyebrow">About</p>
+        <h2>Profile</h2>
+      </header>
+      <div class="about__grid">
+        <p class="about__text">Computer Science student major in Software Engineering with a strong interest in Frontend Development and Quality Assurance (QA) Testing. Skilled in developing responsive web and mobile user interfaces, implementing user-centered designs, and performing manual and automated software testing. Eager to apply academic knowledge in a professional environment, collaborate effectively with teams, and strengthen technical, problem-solving, and documentation skills through real-world software development experience.</p>
+        <ul class="focus">
+          <li><h3>Frontend development</h3><p>Responsive web and mobile user interfaces built from user-centered designs.</p></li>
+          <li><h3>QA testing</h3><p>Manual and automated software testing, debugging, and troubleshooting.</p></li>
+          <li><h3>UI/UX design</h3><p>Interfaces and interactive prototypes in Figma, focused on usability and user requirements.</p></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -79,7 +98,7 @@
   <section class="section" id="work">
     <div class="wrap">
       <header class="section__head">
-        <p class="eyebrow">Featured project · Thesis</p>
+        <p class="eyebrow">Project · Thesis</p>
         <h2>ResQ</h2>
         <p class="section__sub">A centralized blood donation management system using Decision Tree classification and Min-Heap priority scheduling.</p>
       </header>
@@ -92,164 +111,37 @@
             <div><dt>Platforms</dt><dd>Flutter donor app · React.js hospital dashboard</dd></div>
           </dl>
           <ul class="ticks">
-            <li>Donor eligibility screening with a <strong>Decision Tree classifier</strong>, so only donors who qualify get booked.</li>
-            <li>Emergency blood requests ordered by a <strong>Min-Heap priority queue</strong> based on urgency and proximity.</li>
-            <li>Core features: donor registration, appointment scheduling, QR check-in, blood inventory, and admin reporting.</li>
+            <li>Developed a centralized blood donation management system with a <strong>Flutter donor mobile app</strong> and a <strong>React.js hospital administration dashboard</strong>.</li>
+            <li>Implemented <strong>Decision Tree Classification</strong> for donor eligibility screening and <strong>Min-Heap Priority Scheduling</strong> to prioritize emergency blood requests by urgency and proximity.</li>
+            <li>Designed core features: donor registration, appointment scheduling, QR check-in, blood inventory management, and administrative reporting.</li>
           </ul>
           <ul class="chips" aria-label="Technologies">
-            <li>Flutter</li><li>Dart</li><li>React.js</li><li>Decision Tree</li><li>Min-Heap</li><li>QA testing</li>
+            <li>Flutter</li><li>React.js</li><li>Decision Tree</li><li>Min-Heap</li>
           </ul>
         </div>
 
         <figure class="flow" aria-label="How ResQ works: donor app, eligibility check, priority queue, hospital dashboard">
           <figcaption class="flow__cap">How a request moves through ResQ</figcaption>
           <ol class="flow__steps">
-            <li><span class="flow__k">Donor app</span><span class="flow__v">Register, book, QR check-in</span><span class="flow__tag">Flutter</span></li>
-            <li><span class="flow__k">Eligibility</span><span class="flow__v">Screened by decision tree</span><span class="flow__tag">Classifier</span></li>
-            <li><span class="flow__k">Request queue</span><span class="flow__v">Urgent + nearest first</span><span class="flow__tag">Min-Heap</span></li>
-            <li><span class="flow__k">Hospital dashboard</span><span class="flow__v">Inventory &amp; reports</span><span class="flow__tag">React.js</span></li>
+            <li><span class="flow__k">Donor app</span><span class="flow__v">Registration, scheduling, QR check-in</span><span class="flow__tag">Flutter</span></li>
+            <li><span class="flow__k">Eligibility</span><span class="flow__v">Donor eligibility screening</span><span class="flow__tag">Classifier</span></li>
+            <li><span class="flow__k">Request queue</span><span class="flow__v">Prioritized by urgency &amp; proximity</span><span class="flow__tag">Min-Heap</span></li>
+            <li><span class="flow__k">Hospital dashboard</span><span class="flow__v">Blood inventory &amp; reporting</span><span class="flow__tag">React.js</span></li>
           </ol>
-          <div class="heap" aria-hidden="true">
-            <span class="heap__label">priority queue</span>
-            <div class="heap__row"><b class="p1">O− · ER · 2 km</b></div>
-            <div class="heap__row"><b class="p2">A+ · 5 km</b><b class="p2">B+ · 3 km</b></div>
-            <div class="heap__row"><b class="p3">O+</b><b class="p3">AB+</b><b class="p3">A−</b></div>
-          </div>
+          
         </figure>
       </article>
 
-      <!-- OTHER PROJECTS -->
-      <div class="projects">
-        <div class="projects__head">
-          <h3>More projects</h3>
-          <div class="filters" role="group" aria-label="Filter projects by language">
-            <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
-            <button type="button" class="filter" data-filter="swift" aria-pressed="false">Swift</button>
-            <button type="button" class="filter" data-filter="java" aria-pressed="false">Java</button>
-            <button type="button" class="filter" data-filter="python" aria-pressed="false">Python</button>
-            <button type="button" class="filter" data-filter="dart" aria-pressed="false">Dart</button>
-          </div>
-        </div>
-
-        <ul class="plist" id="project-list">
-          <li data-lang="swift">
-            <a href="https://github.com/civicbuenafe28/Drive-Now" target="_blank" rel="noopener">
-              <span class="plist__name">Drive-Now</span>
-              <span class="plist__desc">Final project for Mobile Application Development.</span>
-              <span class="plist__tags"><em>Swift</em><em>SwiftUI</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li data-lang="dart">
-            <a href="https://github.com/civicbuenafe28/Eunissentials" target="_blank" rel="noopener">
-              <span class="plist__name">EUnissentials</span>
-              <span class="plist__desc">Final project for Application Development &amp; Emerging Technologies.</span>
-              <span class="plist__tags"><em>Dart</em><em>Flutter</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li data-lang="swift">
-            <a href="https://github.com/civicbuenafe28/Meal-Planner" target="_blank" rel="noopener">
-              <span class="plist__name">Meal-Planner</span>
-              <span class="plist__desc">Functional meal-planning UI built in Xcode.</span>
-              <span class="plist__tags"><em>Swift</em><em>SwiftUI</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li data-lang="swift">
-            <a href="https://github.com/civicbuenafe28/Digital-Resume-UI" target="_blank" rel="noopener">
-              <span class="plist__name">Digital-Resume-UI</span>
-              <span class="plist__desc">Résumé screen layout — Mobile Application Development activity.</span>
-              <span class="plist__tags"><em>Swift</em><em>SwiftUI</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li data-lang="java">
-            <a href="https://github.com/civicbuenafe28/Student-Information-System" target="_blank" rel="noopener">
-              <span class="plist__name">Student-Information-System</span>
-              <span class="plist__desc">Student records system — Object-Oriented Programming final.</span>
-              <span class="plist__tags"><em>Java</em><em>OOP</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li data-lang="java">
-            <a href="https://github.com/civicbuenafe28/Employee-Salary-System" target="_blank" rel="noopener">
-              <span class="plist__name">Employee-Salary-System</span>
-              <span class="plist__desc">Salary computation and employee management.</span>
-              <span class="plist__tags"><em>Java</em><em>OOP</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li data-lang="java">
-            <a href="https://github.com/civicbuenafe28/Probability-Calculator" target="_blank" rel="noopener">
-              <span class="plist__name">Probability-Calculator</span>
-              <span class="plist__desc">Probability tool with a GUI — Discrete Structures final.</span>
-              <span class="plist__tags"><em>Java</em><em>GUI</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li data-lang="python">
-            <a href="https://github.com/civicbuenafe28/Honda-Civic-History-Management-System" target="_blank" rel="noopener">
-              <span class="plist__name">Honda-Civic-History-Management</span>
-              <span class="plist__desc">Vehicle history records backed by a SQL database.</span>
-              <span class="plist__tags"><em>Python</em><em>SQL</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li data-lang="python">
-            <a href="https://github.com/civicbuenafe28/Hotel-Room-Reservation" target="_blank" rel="noopener">
-              <span class="plist__name">Hotel-Room-Reservation</span>
-              <span class="plist__desc">Customer reservations with a GUI and SQL storage (CP102).</span>
-              <span class="plist__tags"><em>Python</em><em>SQL</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li data-lang="python">
-            <a href="https://github.com/civicbuenafe28/Unit-Converter-GUI" target="_blank" rel="noopener">
-              <span class="plist__name">Unit-Converter-GUI</span>
-              <span class="plist__desc">Desktop unit converter (CP102).</span>
-              <span class="plist__tags"><em>Python</em><em>GUI</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li data-lang="python">
-            <a href="https://github.com/civicbuenafe28/Python--Custom-Flappy-Bird-Game" target="_blank" rel="noopener">
-              <span class="plist__name">Custom Flappy Bird</span>
-              <span class="plist__desc">A take on Flappy Bird — Computer Programming 1 final.</span>
-              <span class="plist__tags"><em>Python</em><em>Game</em></span>
-              <span class="plist__arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-        </ul>
-        <p class="more"><a href="https://github.com/civicbuenafe28" target="_blank" rel="noopener">All repositories on GitHub ↗</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT / WHAT I DO -->
-  <section class="section section--alt" id="about">
-    <div class="wrap about">
-      <header class="section__head">
-        <p class="eyebrow">About</p>
-        <h2>Frontend builder with a tester’s eye</h2>
-      </header>
-      <div class="about__grid">
-        <p class="about__text">I’m a 4th-year Computer Science student at Manuel S. Enverga University Foundation in Lucena City. I like the whole loop of making software: sorting out requirements, designing the screens in Figma, building them, and then testing until they hold up. I’m looking for an internship where I can do that on a real team and learn how professionals ship.</p>
-        <ul class="focus">
-          <li><h3>Frontend development</h3><p>Responsive web and mobile interfaces with Flutter and web tech, built from user-centered designs.</p></li>
-          <li><h3>QA &amp; testing</h3><p>Functional testing, debugging, and troubleshooting — manual and automated — to catch defects early.</p></li>
-          <li><h3>UI/UX design</h3><p>Wireframes and interactive prototypes in Figma, focused on usability and real user requirements.</p></li>
-        </ul>
-      </div>
+      
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section class="section" id="experience">
+  <section class="section section--alt" id="experience">
     <div class="wrap">
       <header class="section__head">
-        <p class="eyebrow">Experience</p>
-        <h2>Where I’ve worked</h2>
+        <p class="eyebrow">Work &amp; organizations</p>
+        <h2>Experience</h2>
       </header>
       <ol class="timeline">
         <li>
@@ -258,9 +150,11 @@
             <h3>Student Software Developer &amp; QA Tester</h3>
             <p class="timeline__org">Academic &amp; competition projects</p>
             <ul>
-              <li>Implemented features, database structures, and system components from project requirements.</li>
-              <li>Ran functional tests, debugged, and fixed defects to improve reliability.</li>
-              <li>Designed UIs and interactive prototypes; worked with teammates on analysis, testing, and documentation.</li>
+              <li>Developed and tested software applications using programming, development, and quality assurance practices.</li>
+              <li>Implemented application functionality, database structures, and system components based on project requirements.</li>
+              <li>Conducted functional testing, debugging, and troubleshooting to identify defects and improve software reliability.</li>
+              <li>Designed user interfaces and interactive prototypes with a focus on usability and user requirements.</li>
+              <li>Collaborated with team members in requirements analysis, development, testing, documentation, and project delivery.</li>
             </ul>
           </div>
         </li>
@@ -270,8 +164,8 @@
             <h3>Research Committee</h3>
             <p class="timeline__org">PSITES / MASTECH</p>
             <ul>
-              <li>Organized committee documents and supported research for college programs and events.</li>
-              <li>Reviewed and validated student records for Dean’s List eligibility.</li>
+              <li>Organized and maintained committee documents while supporting research for college programs and events.</li>
+              <li>Reviewed and validated student records for Dean’s List eligibility and helped coordinate academic and departmental submissions.</li>
             </ul>
           </div>
         </li>
@@ -281,19 +175,20 @@
             <h3>Research Committee</h3>
             <p class="timeline__org">MSEUF Wildcats Esports</p>
             <ul>
-              <li>Researched event concepts, themes, and production materials for tournaments.</li>
-              <li>Managed online registration for members and participants with Google Forms.</li>
+              <li>Conducted research for event concepts, themes, and production materials for esports events.</li>
+              <li>Managed online registration forms for organization members and tournament participants using Google Forms.</li>
+              <li>Supported event preparation and provided operational assistance during esports tournaments.</li>
             </ul>
           </div>
         </li>
         <li>
           <p class="timeline__date">Jan 2025 – May 2025</p>
           <div>
-            <h3>Social Media Manager, Marketing</h3>
+            <h3>Social Media Manager (Marketing Department)</h3>
             <p class="timeline__org">MSEUF Wildcats Esports</p>
             <ul>
-              <li>Scheduled posts and wrote community updates and announcements.</li>
-              <li>Provided event marshaling and technical support during competitions.</li>
+              <li>Managed social media post scheduling and created written content for community updates and announcements.</li>
+              <li>Assisted in tournament operations by providing event marshaling and technical support during esports competitions.</li>
             </ul>
           </div>
         </li>
@@ -304,79 +199,50 @@
           <p class="eyebrow">Education</p>
           <h3>Manuel S. Enverga University Foundation</h3>
           <p>BS Computer Science, major in Software Engineering · Lucena City, Quezon</p>
-          <p class="edu__note">Aug 2023 – Present · University &amp; College Scholar and Dean’s Lister, GWA 1.25–1.53</p>
+          <p class="edu__note">Aug 2023 – Present · Consistently recognized as a University and College Scholar and Dean’s Lister, maintaining a GWA ranging from 1.25 to 1.53.</p>
         </div>
-        <ul class="edu__prev">
-          <li><span>Quezon National High School</span><span class="num">2020 – 2023</span><span class="edu__hon">With High Honors, Grades 10–12</span></li>
-          <li><span>Maryhill College</span><span class="num">2017 – 2020</span><span class="edu__hon">Junior High, Grades 7–9</span></li>
-        </ul>
+        
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section class="section section--alt" id="skills">
+  <section class="section" id="skills">
     <div class="wrap">
       <header class="section__head">
-        <p class="eyebrow">Skills</p>
-        <h2>Toolkit</h2>
+        <p class="eyebrow">Technical &amp; soft skills</p>
+        <h2>Skills</h2>
       </header>
       <div class="skills">
-        <div class="skills__group">
-          <h3>Languages</h3>
-          <ul class="chips"><li>Python</li><li>Java</li><li>Dart</li><li>Swift</li><li>SQL</li></ul>
-        </div>
-        <div class="skills__group">
-          <h3>Frameworks &amp; platforms</h3>
-          <ul class="chips"><li>Flutter</li><li>SwiftUI</li><li>Web development</li><li>Mobile development</li></ul>
-        </div>
-        <div class="skills__group">
-          <h3>Testing &amp; quality</h3>
-          <ul class="chips"><li>Functional testing</li><li>Manual &amp; automated QA</li><li>Debugging</li><li>Test documentation</li></ul>
-        </div>
-        <div class="skills__group">
-          <h3>Tools</h3>
-          <ul class="chips"><li>Git &amp; GitHub</li><li>Figma</li><li>MySQL</li><li>VS Code</li><li>Android Studio</li><li>IntelliJ</li><li>MS Office</li></ul>
+        <div class="skills__group skills__group--wide">
+          <h3>Technical competencies</h3>
+          <ul class="chips"><li>Python &amp; Java</li><li>Dart &amp; Flutter</li><li>Web Development</li><li>Mobile Development</li><li>Database Management (MySQL)</li><li>Software Testing and QA</li><li>Git &amp; GitHub</li><li>IDEs (VS Code, Android Studio, IntelliJ)</li><li>UI/UX Design (Figma)</li><li>Debugging &amp; Troubleshooting</li></ul>
         </div>
         <div class="skills__group skills__group--wide">
-          <h3>Working style</h3>
-          <ul class="chips chips--soft"><li>Teamwork &amp; collaboration</li><li>Communication</li><li>Problem-solving</li><li>Critical thinking</li><li>Attention to detail</li><li>Process coordination</li><li>Adaptability</li><li>Technical writing</li></ul>
+          <h3>Coordination &amp; soft skills</h3>
+          <ul class="chips chips--soft"><li>Teamwork &amp; Collaboration</li><li>Communication</li><li>Adaptability &amp; Continuous Learning</li><li>Problem-Solving</li><li>Critical Thinking</li><li>Process Coordination</li><li>Attention to Detail</li><li>Technical Documentation</li><li>Microsoft Office Suite</li></ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CERTIFICATIONS -->
-  <section class="section" id="certifications">
+  <section class="section section--alt" id="certifications">
     <div class="wrap">
       <header class="section__head">
-        <p class="eyebrow">Certifications &amp; competitions</p>
-        <h2>Recent milestones</h2>
+        <p class="eyebrow">Achievements</p>
+        <h2>Certifications &amp; competitions</h2>
       </header>
 
       <ol class="milestones">
         <li><span class="num">Ongoing</span><span>DAP NextGenPH 2026</span><span class="ms__src">Participant / Competitor</span></li>
         <li><span class="num">Jul 2026</span><span>Microsoft Azure Fundamentals (AZ-900)</span><span class="ms__src">Microsoft · Coursera</span></li>
-        <li><span class="num">Jun 2026</span><span>Software Testing, Deployment &amp; Maintenance Strategies</span><span class="ms__src">IBM · Coursera</span></li>
-        <li><span class="num">May 2025</span><span>MSEUF Startup Pitch Competition — Top 10 Finalist</span><span class="ms__src">Competition</span></li>
-        <li><span class="num">Apr 2025</span><span>Flutter &amp; Dart: Developing iOS, Android &amp; Mobile Apps</span><span class="ms__src">IBM · Coursera</span></li>
+        <li><span class="num">Jun 2026</span><span>Software Testing, Deployment, and Maintenance Strategies</span><span class="ms__src">IBM · Coursera</span></li>
+        <li><span class="num">May 2025</span><span>MSEUF Startup Pitch Competition — Top 10 Finalist</span><span class="ms__src"></span></li>
+        <li><span class="num">Apr 2025</span><span>Flutter and Dart: Developing iOS, Android, and Mobile Apps</span><span class="ms__src">IBM · Coursera</span></li>
       </ol>
 
-      <h3 class="subhead">Certificate gallery <span>Tap to view full size</span></h3>
-      <ul class="certs" id="certs">
-        <li><button type="button" data-full="assets/img/certs/flutter-dart.jpg"><img src="assets/img/certs/flutter-dart-thumb.jpg" alt="" loading="lazy"><span>Flutter &amp; Dart — iOS/Android apps</span></button></li>
-        <li><button type="button" data-full="assets/img/certs/swift-foundations.jpg"><img src="assets/img/certs/swift-foundations-thumb.jpg" alt="" loading="lazy"><span>Foundations of Swift &amp; SwiftUI</span></button></li>
-        <li><button type="button" data-full="assets/img/certs/swiftui-interface.jpg"><img src="assets/img/certs/swiftui-interface-thumb.jpg" alt="" loading="lazy"><span>Create the User Interface with SwiftUI</span></button></li>
-        <li><button type="button" data-full="assets/img/certs/rdbms.jpg"><img src="assets/img/certs/rdbms-thumb.jpg" alt="" loading="lazy"><span>Introduction to Relational Databases</span></button></li>
-        <li><button type="button" data-full="assets/img/certs/data-privacy.jpg"><img src="assets/img/certs/data-privacy-thumb.jpg" alt="" loading="lazy"><span>Data Privacy &amp; Protection Standards</span></button></li>
-        <li><button type="button" data-full="assets/img/certs/ai-ethics.jpg"><img src="assets/img/certs/ai-ethics-thumb.jpg" alt="" loading="lazy"><span>Ethics of Artificial Intelligence</span></button></li>
-        <li><button type="button" data-full="assets/img/certs/dynamic-programming.jpg"><img src="assets/img/certs/dynamic-programming-thumb.jpg" alt="" loading="lazy"><span>Dynamic Programming &amp; Greedy Algorithms</span></button></li>
-        <li><button type="button" data-full="assets/img/certs/system-validation.jpg"><img src="assets/img/certs/system-validation-thumb.jpg" alt="" loading="lazy"><span>System Validation — Automata</span></button></li>
-        <li><button type="button" data-full="assets/img/certs/assembler.jpg"><img src="assets/img/certs/assembler-thumb.jpg" alt="" loading="lazy"><span>Architecture Assembler Language, Part 1</span></button></li>
-        <li><button type="button" data-full="assets/img/certs/cisco-networking.jpg"><img src="assets/img/certs/cisco-networking-thumb.jpg" alt="" loading="lazy"><span>Cisco Networking Essentials</span></button></li>
-        <li><button type="button" data-full="assets/img/certs/eskwelabs.jpg"><img src="assets/img/certs/eskwelabs-thumb.jpg" alt="" loading="lazy"><span>Eskwelabs session</span></button></li>
-      </ul>
-    </div>
+          </div>
   </section>
 
   <!-- CONTACT -->
@@ -384,8 +250,7 @@
     <div class="wrap contact__inner">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2 class="contact__title">Hiring interns for frontend or QA?<br>Let’s talk.</h2>
-        <p class="contact__sub">Based in Lucena City, Quezon · open to on-site, hybrid, or remote internships.</p>
+        <h2 class="contact__title">Let’s get in touch.</h2>
       </div>
       <div class="contact__card">
         <div class="contact__row">
@@ -395,14 +260,11 @@
         </div>
         <div class="contact__row">
           <span class="contact__label">Phone</span>
-          <span class="contact__value num">+63 928 485 8309</span>
+          <span class="contact__value num">0928-485-8309</span>
         </div>
         <ul class="socials">
           <li><a href="https://www.linkedin.com/in/carl-victor-buenafe-3b9b0a2b8/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
           <li><a href="https://github.com/civicbuenafe28" target="_blank" rel="noopener">GitHub ↗</a></li>
-          <li><a href="https://www.facebook.com/civicbuenafe28" target="_blank" rel="noopener">Facebook ↗</a></li>
-          <li><a href="https://www.instagram.com/civicbuenafe28" target="_blank" rel="noopener">Instagram ↗</a></li>
-          <li><a href="https://x.com/civicbuenafe28" target="_blank" rel="noopener">X ↗</a></li>
         </ul>
       </div>
     </div>
@@ -416,11 +278,6 @@
   </div>
 </footer>
 
-<div class="lightbox" id="lightbox" hidden>
-  <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close certificate">×</button>
-  <img id="lightbox-img" alt="">
-  <p id="lightbox-cap"></p>
-</div>
 
 <script src="scripts/main.js"></script>
 </body>

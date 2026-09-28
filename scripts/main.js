@@ -37,56 +37,16 @@
   window.addEventListener('scroll', onScroll, { passive: true });
 
   const navMap = new Map($$('a', links).map(a => [a.getAttribute('href').slice(1), a]));
-  const sectionFor = { about: 'work' }; // "about" sits between Work and Experience
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (!e.isIntersecting) return;
-        const id = sectionFor[e.target.id] || e.target.id;
+        const id = e.target.id;
         navMap.forEach((a, key) => a.classList.toggle('is-active', key === id));
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
     $$('main section[id]').forEach(s => io.observe(s));
   }
-
-  /* ---- project filter ---- */
-  const filters = $$('.filter');
-  const items = $$('#project-list > li');
-  filters.forEach(btn => btn.addEventListener('click', () => {
-    const f = btn.dataset.filter;
-    filters.forEach(b => {
-      const on = b === btn;
-      b.classList.toggle('is-active', on);
-      b.setAttribute('aria-pressed', String(on));
-    });
-    items.forEach(li => { li.hidden = !(f === 'all' || li.dataset.lang === f); });
-  }));
-
-  /* ---- certificate lightbox ---- */
-  const box = $('#lightbox');
-  const boxImg = $('#lightbox-img');
-  const boxCap = $('#lightbox-cap');
-  let lastFocus = null;
-  const openBox = (btn) => {
-    lastFocus = btn;
-    const cap = $('span', btn).textContent;
-    boxImg.src = btn.dataset.full;
-    boxImg.alt = `Certificate: ${cap}`;
-    boxCap.textContent = cap;
-    box.hidden = false;
-    document.body.style.overflow = 'hidden';
-    $('#lightbox-close').focus();
-  };
-  const closeBox = () => {
-    box.hidden = true;
-    boxImg.removeAttribute('src');
-    document.body.style.overflow = '';
-    lastFocus?.focus();
-  };
-  $$('#certs button').forEach(b => b.addEventListener('click', () => openBox(b)));
-  $('#lightbox-close')?.addEventListener('click', closeBox);
-  box?.addEventListener('click', e => { if (e.target === box) closeBox(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !box.hidden) closeBox(); });
 
   /* ---- copy email ---- */
   const copyBtn = $('#copy-email');

@@ -289,6 +289,12 @@ h1, h2, h3 { line-height: 1.15; text-wrap: balance; }
 	border: 1px solid transparent;
 	box-shadow: 0 30px 80px -40px rgba(139, 92, 246, .55);
 }
+.project__shot {
+	grid-column: 1 / -1; margin: 0; border-radius: 16px; overflow: hidden;
+	border: 1px solid var(--line-strong); box-shadow: 0 20px 50px -24px rgba(0, 0, 0, .8);
+}
+.project__shot img { width: 100%; height: auto; aspect-ratio: 1200 / 628; object-fit: cover; transition: transform .6s ease; }
+.project:hover .project__shot img { transform: scale(1.015); }
 .project__badges { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .badge {
 	padding: 5px 12px; border-radius: 999px; font-family: var(--f-mono); font-size: .82rem; letter-spacing: .06em; text-transform: uppercase;
@@ -350,7 +356,13 @@ h1, h2, h3 { line-height: 1.15; text-wrap: balance; }
 /* education & certs */
 .edu-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 22px; align-items: start; }
 .edu, .certs { padding: clamp(22px, 3vw, 30px); }
-.edu h3 { margin-top: 16px; font-size: 1.4rem; font-weight: 700; }
+.edu__top { display: grid; grid-template-columns: 96px 1fr; gap: 20px; align-items: center; }
+.edu__logo {
+	width: 96px; height: 96px; border-radius: 50%; object-fit: cover; background: #fff;
+	border: 2px solid rgba(94, 231, 247, .35); box-shadow: 0 0 24px rgba(236, 72, 153, .25);
+}
+.edu h3 { margin-top: 10px; font-size: 1.4rem; font-weight: 700; }
+@media (max-width: 420px) { .edu__top { grid-template-columns: 1fr; } }
 .edu__place { color: var(--muted); margin-top: 2px; }
 .edu__degree { margin-top: 14px; color: var(--cyan); font-weight: 500; }
 .edu__honor { margin-top: 20px; padding: 16px 18px; border-radius: 12px; background: rgba(167, 139, 250, .08); border: 1px solid rgba(167, 139, 250, .22); }

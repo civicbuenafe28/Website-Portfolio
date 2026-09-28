@@ -105,6 +105,30 @@
     }
   });
 
+  /* ---- certificate lightbox ---- */
+  const box = $('#lightbox');
+  const boxImg = $('#lightbox-img');
+  const boxCap = $('#lightbox-cap');
+  let lastFocus = null;
+  const closeBox = () => {
+    box.hidden = true;
+    boxImg.removeAttribute('src');
+    document.body.style.overflow = '';
+    lastFocus?.focus();
+  };
+  $$('[data-full]').forEach(btn => btn.addEventListener('click', () => {
+    lastFocus = btn;
+    boxImg.src = btn.dataset.full;
+    boxImg.alt = `Certificate: ${btn.dataset.caption}`;
+    boxCap.textContent = btn.dataset.caption;
+    box.hidden = false;
+    document.body.style.overflow = 'hidden';
+    $('#lightbox-close').focus();
+  }));
+  $('#lightbox-close')?.addEventListener('click', closeBox);
+  box?.addEventListener('click', e => { if (e.target === box || e.target.classList.contains('lightbox__fig')) closeBox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && box && !box.hidden) closeBox(); });
+
   /* ---- footer year ---- */
   const y = $('#year');
   if (y) y.textContent = new Date().getFullYear();

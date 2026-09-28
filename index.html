@@ -316,13 +316,63 @@
                     <div class="certs__head">
                         <h3>Certifications &amp; Competitions</h3>
                     </div>
-                    <ol class="certs__list">
-                        <li><span class="certs__date">Ongoing</span><span class="certs__name">DAP NextGenPH 2026</span><span class="certs__by">Participant / Competitor</span></li>
-                        <li><span class="certs__date">Jul 2026</span><span class="certs__name">Microsoft Azure Fundamentals – AZ-900</span><span class="certs__by">Microsoft · Coursera</span></li>
-                        <li><span class="certs__date">Jun 2026</span><span class="certs__name">Software Testing, Deployment, and Maintenance Strategies</span><span class="certs__by">IBM · Coursera</span></li>
-                        <li><span class="certs__date">May 2025</span><span class="certs__name">MSEUF Startup Pitch Competition</span><span class="certs__by">Top 10 Finalist</span></li>
-                        <li><span class="certs__date">Apr 2025</span><span class="certs__name">Flutter and Dart: Developing iOS, Android, and Mobile Apps</span><span class="certs__by">IBM · Coursera</span></li>
-                    </ol>
+
+                    <h4 class="certs__sub"><span class="dot"></span>Certifications</h4>
+                    <ul class="cert-cards">
+                        <li class="cert-card">
+                            <button type="button" class="cert-card__thumb" data-full="assets/img/certs/azure-az900.jpg" data-caption="Microsoft Azure Fundamentals – AZ-900" aria-label="View certificate: Microsoft Azure Fundamentals – AZ-900">
+                                <img src="assets/img/certs/azure-az900-thumb.jpg" alt="" width="720" height="556" loading="lazy">
+                                <span class="cert-card__zoom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>View certificate</span>
+                            </button>
+                            <div class="cert-card__body">
+                                <span class="certs__date">Jul 2026</span>
+                                <h5 class="cert-card__name">Microsoft Azure Fundamentals – AZ-900</h5>
+                                <span class="certs__by">Microsoft · Coursera</span>
+                            </div>
+                        </li>
+                        <li class="cert-card">
+                            <button type="button" class="cert-card__thumb" data-full="assets/img/certs/software-testing.jpg" data-caption="Software Testing, Deployment, and Maintenance Strategies" aria-label="View certificate: Software Testing, Deployment, and Maintenance Strategies">
+                                <img src="assets/img/certs/software-testing-thumb.jpg" alt="" width="720" height="556" loading="lazy">
+                                <span class="cert-card__zoom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>View certificate</span>
+                            </button>
+                            <div class="cert-card__body">
+                                <span class="certs__date">Jun 2026</span>
+                                <h5 class="cert-card__name">Software Testing, Deployment, and Maintenance Strategies</h5>
+                                <span class="certs__by">IBM · Coursera</span>
+                            </div>
+                        </li>
+                        <li class="cert-card">
+                            <button type="button" class="cert-card__thumb" data-full="assets/img/certs/flutter-dart.jpg" data-caption="Flutter and Dart: Developing iOS, Android, and Mobile Apps" aria-label="View certificate: Flutter and Dart: Developing iOS, Android, and Mobile Apps">
+                                <img src="assets/img/certs/flutter-dart-thumb.jpg" alt="" width="720" height="556" loading="lazy">
+                                <span class="cert-card__zoom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>View certificate</span>
+                            </button>
+                            <div class="cert-card__body">
+                                <span class="certs__date">Apr 2025</span>
+                                <h5 class="cert-card__name">Flutter and Dart: Developing iOS, Android, and Mobile Apps</h5>
+                                <span class="certs__by">IBM · Coursera</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h4 class="certs__sub"><span class="dot dot--pink"></span>Competitions</h4>
+                    <ul class="comps">
+                        <li class="comp">
+                            <span class="comp__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span>
+                            <div class="comp__body">
+                                <span class="certs__date">Ongoing</span>
+                                <h5 class="cert-card__name">DAP NextGenPH 2026</h5>
+                            </div>
+                            <span class="comp__status comp__status--live">Participant / Competitor</span>
+                        </li>
+                        <li class="comp">
+                            <span class="comp__icon comp__icon--pink"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></span>
+                            <div class="comp__body">
+                                <span class="certs__date">May 2025</span>
+                                <h5 class="cert-card__name">MSEUF Startup Pitch Competition</h5>
+                            </div>
+                            <span class="comp__status">Top 10 Finalist</span>
+                        </li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -361,6 +411,14 @@
             <a href="#top">Back to top ↑</a>
         </div>
     </footer>
+
+    <div class="lightbox" id="lightbox" hidden>
+        <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close certificate">&times;</button>
+        <figure class="lightbox__fig">
+            <img id="lightbox-img" alt="">
+            <figcaption id="lightbox-cap"></figcaption>
+        </figure>
+    </div>
 
     <script src="scripts/main.js"></script>
 </body>

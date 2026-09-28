@@ -51,6 +51,12 @@
   toggle?.addEventListener('click', () => setMenu(!links.classList.contains('is-open')));
   $$('a', links).forEach(a => a.addEventListener('click', () => setMenu(false)));
 
+  /* ---- back-to-top links ---- */
+  $$('a[href="#top"]').forEach(link => link.addEventListener('click', event => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+  }));
+
   /* ---- nav border + active link ---- */
   const nav = $('.nav');
   const onScroll = () => nav.classList.toggle('is-scrolled', scrollY > 8);

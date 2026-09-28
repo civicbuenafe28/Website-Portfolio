@@ -2,339 +2,318 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carl Victor A. Buenafe - Portfolio</title>
-    <meta name="description" content="Carl Victor Buenafe, BS Computer Science student (Software Engineering) with an interest in Frontend Development and QA Testing.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Carl Victor Buenafe</title>
+    <meta name="description" content="Carl Victor Buenafe, BS Computer Science student (Software Engineering) with a strong interest in Frontend Development and QA Testing.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-    <link rel="preload" as="image" href="assets/img/carl.jpg">
 </head>
 <body>
     <canvas id="tech-canvas" aria-hidden="true"></canvas>
-    <div class="static-pattern"></div>
-    <div class="hex-pattern"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--a" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--b" aria-hidden="true"></div>
 
-    <div class="bg-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-        <div class="shape shape-5"></div>
-    </div>
-
-    <div class="grid-overlay"></div>
+    <a class="skip" href="#main">Skip to content</a>
 
     <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">Carl Victor Buenafe</div>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#profile" class="nav-link">Profile</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div class="hero-profile">
-            <div class="profile-image-wrapper">
-                <img src="assets/img/carl.jpg" alt="Carl Victor A. Buenafe" class="profile-image" width="180" height="180">
-            </div>
-        </div>
-        <h1 class="hero-title">CARL VICTOR BUENAFE</h1>
-        <p class="hero-subtitle">BS Computer Science Student | Software Engineering</p>
-        <div class="hero-stats">
-            <div class="stat-item">
-                <div class="stat-number">1.25</div>
-                <div class="stat-label">Highest GWA</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">4th</div>
-                <div class="stat-label">Current Year</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">10+</div>
-                <div class="stat-label">Tech Skills</div>
-            </div>
-        </div>
-        <div class="hero-buttons">
-            <a href="#projects" class="cta-button">View Projects</a>
-            <a href="#contact" class="cta-button cta-secondary">Get In Touch</a>
-        </div>
-    </section>
-
-    <!-- Profile Section -->
-    <section id="profile">
-        <h2 class="glitch">PROFILE</h2>
-        <div class="about-text profile-card">
-            <h3>About Me</h3>
-            <p>Computer Science student major in Software Engineering with a strong interest in Frontend Development and Quality Assurance (QA) Testing. Skilled in developing responsive web and mobile user interfaces, implementing user-centered designs, and performing manual and automated software testing. Eager to apply academic knowledge in a professional environment, collaborate effectively with teams, and strengthen technical, problem-solving, and documentation skills through real-world software development experience.</p>
-            <div class="focus-tags">
-                <span class="tech-tag">Frontend Development</span>
-                <span class="tech-tag">QA Testing</span>
-                <span class="tech-tag">UI/UX Design</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2 class="glitch">EDUCATION</h2>
-        <div class="menu-container">
-            <div class="menu-category">
-                <h3>Manuel S. Enverga University Foundation</h3>
-                <ul class="menu-list">
-                    <li>
-                        <a href="#education">
-                            <span class="menu-item-name">Manuel S. Enverga University Foundation - Lucena City, Quezon</span>
-                            <span class="menu-item-price">Aug 2023 - Present</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#education">
-                            <span class="menu-item-name">Bachelor of Science in Computer Science, Major in Software Engineering</span>
-                            <span class="menu-item-price">BSCS</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#education">
-                            <span class="menu-item-name">University and College Scholar &amp; Dean’s Lister</span>
-                            <span class="menu-item-price">GWA 1.25 - 1.53</span>
-                        </a>
-                    </li>
+    <header class="nav" id="top">
+        <div class="container nav__inner">
+            <a href="#top" class="brand" aria-label="Back to top">
+                <span class="brand__mark">CV</span>
+                <span class="brand__name">Carl Victor Buenafe</span>
+            </a>
+            <nav aria-label="Primary">
+                <ul class="nav__links" id="nav-links">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
+            <a class="btn btn--outline btn--sm nav__cta" href="assets/docs/Buenafe-Resume-2026.pdf" target="_blank" rel="noopener">Résumé</a>
+            <button class="nav__toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-    </section>
+    </header>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2 class="glitch">EXPERIENCE</h2>
-        <div class="menu-container">
-            <div class="menu-category">
-                <h3>Student Software Developer &amp; QA Tester</h3>
-                <ul class="menu-list">
-                    <li>
-                        <a href="#experience">
-                            <span class="menu-item-name">Academic &amp; Competition Projects</span>
-                            <span class="menu-item-price">Aug 2023 - Present</span>
-                        </a>
-                    </li>
-                    <li><span class="bullet-item">Developed and tested software applications using programming, development, and quality assurance practices.</span></li>
-                    <li><span class="bullet-item">Implemented application functionality, database structures, and system components based on project requirements.</span></li>
-                    <li><span class="bullet-item">Conducted functional testing, debugging, and troubleshooting to identify defects and improve software reliability.</span></li>
-                    <li><span class="bullet-item">Designed user interfaces and interactive prototypes with a focus on usability and user requirements.</span></li>
-                    <li><span class="bullet-item">Collaborated with team members in requirements analysis, development, testing, documentation, and project delivery.</span></li>
-                </ul>
-            </div>
+    <main id="main">
 
-            <div class="menu-category">
-                <h3>Research Committee</h3>
-                <ul class="menu-list">
-                    <li>
-                        <a href="#experience">
-                            <span class="menu-item-name">PSITES / MASTECH</span>
-                            <span class="menu-item-price">Jul 2024 - May 2026</span>
-                        </a>
-                    </li>
-                    <li><span class="bullet-item">Organized and maintained committee documents while supporting research for college programs and events.</span></li>
-                    <li><span class="bullet-item">Reviewed and validated student records for Dean’s List eligibility and helped coordinate academic and departmental submissions.</span></li>
-                </ul>
-            </div>
-
-            <div class="menu-category">
-                <h3>Research Committee</h3>
-                <ul class="menu-list">
-                    <li>
-                        <a href="#experience">
-                            <span class="menu-item-name">MSEUF Wildcats Esports</span>
-                            <span class="menu-item-price">Aug 2025 - Nov 2025</span>
-                        </a>
-                    </li>
-                    <li><span class="bullet-item">Conducted research for event concepts, themes, and production materials for esports events.</span></li>
-                    <li><span class="bullet-item">Managed online registration forms for organization members and tournament participants using Google Forms.</span></li>
-                    <li><span class="bullet-item">Supported event preparation and provided operational assistance during esports tournaments.</span></li>
-                </ul>
-            </div>
-
-            <div class="menu-category">
-                <h3>Social Media Manager (Marketing Department)</h3>
-                <ul class="menu-list">
-                    <li>
-                        <a href="#experience">
-                            <span class="menu-item-name">MSEUF Wildcats Esports</span>
-                            <span class="menu-item-price">Jan 2025 - May 2025</span>
-                        </a>
-                    </li>
-                    <li><span class="bullet-item">Managed social media post scheduling and created written content for community updates and announcements.</span></li>
-                    <li><span class="bullet-item">Assisted in tournament operations by providing event marshaling and technical support during esports competitions.</span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="glitch">PROJECTS</h2>
-        <div class="specialty-grid">
-            <div class="specialty-card project-card project-card--featured">
-                <div class="specialty-badge">Thesis Project</div>
-                <div class="specialty-icon">🩸</div>
-                <h3>ResQ: A Centralized Blood Donation Management System Using Decision Tree Classification and Min-Heap Priority Scheduling</h3>
-                <p class="project-meta">Business Analyst &amp; QA Tester · Mar 2026 - Present</p>
-                <ul class="project-points">
-                    <li>Developed a centralized blood donation management system with a <strong>Flutter</strong> donor mobile application and <strong>React.js</strong> hospital administration dashboard.</li>
-                    <li>Implemented <strong>Decision Tree Classification</strong> for donor eligibility screening and <strong>Min-Heap Priority Scheduling</strong> to prioritize emergency blood requests based on urgency and proximity.</li>
-                    <li>Designed core system features, including donor registration, appointment scheduling, QR check-in, blood inventory management, and administrative reporting.</li>
-                </ul>
-                <div class="project-tech">
-                    <span class="tech-tag">Flutter</span>
-                    <span class="tech-tag">React.js</span>
-                    <span class="tech-tag">Decision Tree</span>
-                    <span class="tech-tag">Min-Heap</span>
+        <!-- Hero -->
+        <section class="hero container">
+            <div class="hero__text">
+                <p class="hero__hello"><span class="prompt">&gt;</span> hello world, I’m</p>
+                <h1 class="hero__name">Carl Victor<br><span class="grad">Buenafe</span></h1>
+                <p class="hero__role"><span class="nw">BS Computer Science Student</span> <span class="sep">/</span> <span class="nw">Software Engineering</span></p>
+                <p class="hero__lede">I have a strong interest in <strong>Frontend Development</strong> and <strong>Quality Assurance (QA) Testing</strong>, building responsive web and mobile interfaces and testing them manually and with automation.</p>
+                <div class="hero__cta">
+                    <a href="#project" class="btn btn--primary">View My Project</a>
+                    <a href="#contact" class="btn btn--outline">Get In Touch</a>
                 </div>
+                <ul class="hero__links">
+                    <li><a href="https://www.linkedin.com/in/carl-victor-buenafe-3b9b0a2b8/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                    <li><a href="https://github.com/civicbuenafe28" target="_blank" rel="noopener">GitHub ↗</a></li>
+                    <li><span class="hero__email">carlvictor328@gmail.com</span></li>
+                </ul>
             </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="glitch">SKILLS &amp; COMPETENCIES</h2>
-        <div class="specialty-grid">
-            <div class="specialty-card skill-card">
-                <div class="specialty-badge">Technical</div>
-                <div class="specialty-icon">💻</div>
-                <h3>Technical Competencies</h3>
-                <div class="project-tech">
-                    <span class="tech-tag">Python &amp; Java</span>
-                    <span class="tech-tag">Dart &amp; Flutter</span>
-                    <span class="tech-tag">Web Development</span>
-                    <span class="tech-tag">Mobile Development</span>
-                    <span class="tech-tag">Database Management (MySQL)</span>
-                    <span class="tech-tag">Software Testing and QA</span>
-                    <span class="tech-tag">Git &amp; GitHub</span>
-                    <span class="tech-tag">IDEs (VS Code, Android Studio, IntelliJ)</span>
-                    <span class="tech-tag">UI/UX Design (Figma)</span>
-                    <span class="tech-tag">Debugging &amp; Troubleshooting</span>
+            <div class="hero__visual">
+                <div class="avatar">
+                    <div class="avatar__ring" aria-hidden="true"></div>
+                    <img src="assets/img/carl.jpg" alt="Portrait of Carl Victor Buenafe" width="800" height="800">
                 </div>
+                <div class="tag tag--a"><span class="dot"></span>Frontend Development</div>
+                <div class="tag tag--b"><span class="dot dot--pink"></span>QA Testing</div>
+                <div class="tag tag--c"><span class="dot dot--purple"></span>UI/UX · Figma</div>
             </div>
+        </section>
 
-            <div class="specialty-card skill-card">
-                <div class="specialty-badge">Professional</div>
-                <div class="specialty-icon">🤝</div>
-                <h3>Coordination &amp; Soft Skills</h3>
-                <div class="project-tech">
-                    <span class="tech-tag">Teamwork &amp; Collaboration</span>
-                    <span class="tech-tag">Communication</span>
-                    <span class="tech-tag">Adaptability &amp; Continuous Learning</span>
-                    <span class="tech-tag">Problem-Solving</span>
-                    <span class="tech-tag">Critical Thinking</span>
-                    <span class="tech-tag">Process Coordination</span>
-                    <span class="tech-tag">Attention to Detail</span>
-                    <span class="tech-tag">Technical Documentation</span>
-                    <span class="tech-tag">Microsoft Office Suite</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2 class="glitch">CERTIFICATIONS &amp; COMPETITIONS</h2>
-        <div class="menu-container">
-            <div class="menu-category">
-                <h3>Certifications &amp; Competitions</h3>
-                <ul class="menu-list">
-                    <li>
-                        <a href="#certifications">
-                            <span class="menu-item-name">DAP NextGenPH 2026 (Participant / Competitor)</span>
-                            <span class="menu-item-price">Ongoing</span>
-                        </a>
+        <!-- Profile -->
+        <section class="section container" id="profile">
+            <header class="section__head">
+                <p class="kicker">// profile</p>
+                <h2 class="section__title">About Me</h2>
+            </header>
+            <div class="profile">
+                <p class="profile__text">Computer Science student major in Software Engineering with a strong interest in Frontend Development and Quality Assurance (QA) Testing. Skilled in developing responsive web and mobile user interfaces, implementing user-centered designs, and performing manual and automated software testing. Eager to apply academic knowledge in a professional environment, collaborate effectively with teams, and strengthen technical, problem-solving, and documentation skills through real-world software development experience.</p>
+                <ul class="focus">
+                    <li class="panel focus__item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+                        <h3>Frontend Development</h3>
+                        <p>Responsive web and mobile user interfaces.</p>
                     </li>
-                    <li>
-                        <a href="#certifications">
-                            <span class="menu-item-name">Microsoft Azure Fundamentals - AZ-900 (Microsoft | Coursera)</span>
-                            <span class="menu-item-price">Jul 2026</span>
-                        </a>
+                    <li class="panel focus__item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/></svg>
+                        <h3>QA Testing</h3>
+                        <p>Manual and automated software testing.</p>
                     </li>
-                    <li>
-                        <a href="#certifications">
-                            <span class="menu-item-name">Software Testing, Deployment, and Maintenance Strategies (IBM | Coursera)</span>
-                            <span class="menu-item-price">Jun 2026</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#certifications">
-                            <span class="menu-item-name">MSEUF Startup Pitch Competition — Top 10 Finalist</span>
-                            <span class="menu-item-price">May 2025</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#certifications">
-                            <span class="menu-item-name">Flutter and Dart: Developing iOS, Android, and Mobile Apps (IBM | Coursera)</span>
-                            <span class="menu-item-price">Apr 2025</span>
-                        </a>
+                    <li class="panel focus__item">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered designs and prototypes in Figma.</p>
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="glitch">CONTACT</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Get In Touch</h3>
-                <div class="info-item">
-                    <div class="info-icon">📞</div>
-                    <div class="info-text">
-                        <strong>Phone</strong><br>
-                        0928-485-8309
+        <!-- Experience -->
+        <section class="section container" id="experience">
+            <header class="section__head">
+                <p class="kicker">// experience</p>
+                <h2 class="section__title">Experience</h2>
+            </header>
+            <ol class="timeline">
+                <li class="timeline__item">
+                    <div class="panel job">
+                        <div class="job__head">
+                            <div>
+                                <h3>Student Software Developer &amp; QA Tester</h3>
+                                <p class="job__org">Academic &amp; Competition Projects</p>
+                            </div>
+                            <span class="chip-date">Aug 2023 – Present</span>
+                        </div>
+                        <ul class="job__list">
+                            <li>Developed and tested software applications using programming, development, and quality assurance practices.</li>
+                            <li>Implemented application functionality, database structures, and system components based on project requirements.</li>
+                            <li>Conducted functional testing, debugging, and troubleshooting to identify defects and improve software reliability.</li>
+                            <li>Designed user interfaces and interactive prototypes with a focus on usability and user requirements.</li>
+                            <li>Collaborated with team members in requirements analysis, development, testing, documentation, and project delivery.</li>
+                        </ul>
                     </div>
+                </li>
+                <li class="timeline__item">
+                    <div class="panel job">
+                        <div class="job__head">
+                            <div>
+                                <h3>Research Committee</h3>
+                                <p class="job__org">PSITES / MASTECH</p>
+                            </div>
+                            <span class="chip-date">Jul 2024 – May 2026</span>
+                        </div>
+                        <ul class="job__list">
+                            <li>Organized and maintained committee documents while supporting research for college programs and events.</li>
+                            <li>Reviewed and validated student records for Dean’s List eligibility and helped coordinate academic and departmental submissions.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <div class="panel job">
+                        <div class="job__head">
+                            <div>
+                                <h3>Research Committee</h3>
+                                <p class="job__org">MSEUF Wildcats Esports</p>
+                            </div>
+                            <span class="chip-date">Aug 2025 – Nov 2025</span>
+                        </div>
+                        <ul class="job__list">
+                            <li>Conducted research for event concepts, themes, and production materials for esports events.</li>
+                            <li>Managed online registration forms for organization members and tournament participants using Google Forms.</li>
+                            <li>Supported event preparation and provided operational assistance during esports tournaments.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <div class="panel job">
+                        <div class="job__head">
+                            <div>
+                                <h3>Social Media Manager (Marketing Department)</h3>
+                                <p class="job__org">MSEUF Wildcats Esports</p>
+                            </div>
+                            <span class="chip-date">Jan 2025 – May 2025</span>
+                        </div>
+                        <ul class="job__list">
+                            <li>Managed social media post scheduling and created written content for community updates and announcements.</li>
+                            <li>Assisted in tournament operations by providing event marshaling and technical support during esports competitions.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Project -->
+        <section class="section container" id="project">
+            <header class="section__head">
+                <p class="kicker">// project</p>
+                <h2 class="section__title">Featured Project</h2>
+            </header>
+            <article class="project">
+                <div class="project__main">
+                    <div class="project__badges">
+                        <span class="badge">Thesis Project</span>
+                        <span class="chip-date">Mar 2026 – Present</span>
+                    </div>
+                    <h3 class="project__name">Res<span class="grad">Q</span></h3>
+                    <p class="project__full">A Centralized Blood Donation Management System Using Decision Tree Classification and Min-Heap Priority Scheduling</p>
+                    <p class="project__role">Role: <strong>Business Analyst &amp; QA Tester</strong></p>
+                    <ul class="job__list">
+                        <li>Developed a centralized blood donation management system with a Flutter donor mobile application and React.js hospital administration dashboard.</li>
+                        <li>Implemented Decision Tree Classification for donor eligibility screening and Min-Heap Priority Scheduling to prioritize emergency blood requests based on urgency and proximity.</li>
+                        <li>Designed core system features, including donor registration, appointment scheduling, QR check-in, blood inventory management, and administrative reporting.</li>
+                    </ul>
+                    <ul class="chips">
+                        <li>Flutter</li><li>React.js</li><li>Decision Tree</li><li>Min-Heap</li>
+                    </ul>
                 </div>
-                <div class="info-item">
-                    <div class="info-icon">✉️</div>
-                    <div class="info-text">
-                        <strong>Email</strong><br>
-                        carlvictor328@gmail.com
+
+                <div class="project__flow" aria-label="ResQ system overview">
+                    <p class="flow__title">system overview</p>
+                    <ol class="flow">
+                        <li><span class="flow__name">Donor Mobile App</span><span class="flow__desc">Registration · Scheduling · QR check-in</span><span class="flow__tech">Flutter</span></li>
+                        <li><span class="flow__name">Eligibility Screening</span><span class="flow__desc">Decision Tree Classification</span><span class="flow__tech">Classifier</span></li>
+                        <li><span class="flow__name">Emergency Requests</span><span class="flow__desc">Prioritized by urgency &amp; proximity</span><span class="flow__tech">Min-Heap</span></li>
+                        <li><span class="flow__name">Hospital Dashboard</span><span class="flow__desc">Blood inventory · Admin reporting</span><span class="flow__tech">React.js</span></li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+
+        <!-- Skills -->
+        <section class="section container" id="skills">
+            <header class="section__head">
+                <p class="kicker">// skills</p>
+                <h2 class="section__title">Skills</h2>
+            </header>
+            <div class="skills">
+                <div class="panel skills__panel">
+                    <h3><span class="skills__icon">&lt;/&gt;</span>Technical Competencies</h3>
+                    <ul class="chips">
+                        <li>Python &amp; Java</li>
+                        <li>Dart &amp; Flutter</li>
+                        <li>Web Development</li>
+                        <li>Mobile Development</li>
+                        <li>Database Management (MySQL)</li>
+                        <li>Software Testing and QA</li>
+                        <li>Git &amp; GitHub</li>
+                        <li>IDEs (VS Code, Android Studio, IntelliJ)</li>
+                        <li>UI/UX Design (Figma)</li>
+                        <li>Debugging &amp; Troubleshooting</li>
+                    </ul>
+                </div>
+                <div class="panel skills__panel">
+                    <h3><span class="skills__icon skills__icon--pink">{ }</span>Coordination &amp; Soft Skills</h3>
+                    <ul class="chips chips--pink">
+                        <li>Teamwork &amp; Collaboration</li>
+                        <li>Communication</li>
+                        <li>Adaptability &amp; Continuous Learning</li>
+                        <li>Problem-Solving</li>
+                        <li>Critical Thinking</li>
+                        <li>Process Coordination</li>
+                        <li>Attention to Detail</li>
+                        <li>Technical Documentation</li>
+                        <li>Microsoft Office Suite</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section class="section container" id="education">
+            <header class="section__head">
+                <p class="kicker">// education &amp; certifications</p>
+                <h2 class="section__title">Education &amp; Certifications</h2>
+            </header>
+            <div class="edu-grid">
+                <div class="panel edu">
+                    <span class="chip-date">Aug 2023 – Present</span>
+                    <h3>Manuel S. Enverga University Foundation</h3>
+                    <p class="edu__place">Lucena City, Quezon</p>
+                    <p class="edu__degree">Bachelor of Science in Computer Science, Major in Software Engineering</p>
+                    <div class="edu__honor">
+                        <span class="edu__honor-label">Honors</span>
+                        <p>Consistently recognized as a University and College Scholar and Dean’s Lister, maintaining a GWA ranging from 1.25 to 1.53.</p>
                     </div>
                 </div>
 
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/carl-victor-buenafe-3b9b0a2b8/" class="social-link social-link--linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <span class="social-icon" aria-hidden="true">in</span>
-                        <span class="social-label">LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/civicbuenafe28" class="social-link social-link--github" target="_blank" rel="noopener" aria-label="GitHub">
-                        <span class="social-icon" aria-hidden="true">git</span>
-                        <span class="social-label">GitHub</span>
-                    </a>
+                <div class="panel certs">
+                    <h3>Certifications &amp; Competitions</h3>
+                    <ul class="certs__list">
+                        <li><span class="certs__date">Ongoing</span><span class="certs__name">DAP NextGenPH 2026</span><span class="certs__by">Participant / Competitor</span></li>
+                        <li><span class="certs__date">Jul 2026</span><span class="certs__name">Microsoft Azure Fundamentals – AZ-900</span><span class="certs__by">Microsoft · Coursera</span></li>
+                        <li><span class="certs__date">Jun 2026</span><span class="certs__name">Software Testing, Deployment, and Maintenance Strategies</span><span class="certs__by">IBM · Coursera</span></li>
+                        <li><span class="certs__date">May 2025</span><span class="certs__name">MSEUF Startup Pitch Competition</span><span class="certs__by">Top 10 Finalist</span></li>
+                        <li><span class="certs__date">Apr 2025</span><span class="certs__name">Flutter and Dart: Developing iOS, Android, and Mobile Apps</span><span class="certs__by">IBM · Coursera</span></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="copyright">
-                © 2026 Carl Victor A. Buenafe. All rights reserved.
+        <!-- Contact -->
+        <section class="section container" id="contact">
+            <div class="contact">
+                <div class="contact__text">
+                    <p class="kicker">// contact</p>
+                    <h2 class="section__title">Let’s Work <span class="grad">Together</span></h2>
+                    <p>Feel free to reach out by email or phone, or connect with me on LinkedIn.</p>
+                </div>
+                <div class="contact__rows">
+                    <div class="contact__row">
+                        <span class="contact__label">Email</span>
+                        <span class="contact__value" id="email-text">carlvictor328@gmail.com</span>
+                        <button type="button" class="btn btn--sm btn--ghost" id="copy-email">Copy</button>
+                    </div>
+                    <div class="contact__row">
+                        <span class="contact__label">Phone</span>
+                        <span class="contact__value">0928-485-8309</span>
+                    </div>
+                    <div class="contact__social">
+                        <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/in/carl-victor-buenafe-3b9b0a2b8/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                        <a class="btn btn--outline btn--sm" href="https://github.com/civicbuenafe28" target="_blank" rel="noopener">GitHub ↗</a>
+                        <a class="btn btn--primary btn--sm" href="assets/docs/Buenafe-Resume-2026.pdf" target="_blank" rel="noopener">View Résumé</a>
+                    </div>
+                </div>
             </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span>© <span id="year">2026</span> Carl Victor A. Buenafe</span>
+            <a href="#top">Back to top ↑</a>
         </div>
     </footer>
 

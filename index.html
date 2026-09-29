@@ -31,7 +31,7 @@
                 <ul class="nav__links" id="nav-links">
                     <li><a href="#profile">Profile</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#project">Project</a></li>
+                    <li><a href="#project">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -54,7 +54,7 @@
                 <p class="hero__role"><span class="nw">BS Computer Science Student</span> <span class="sep">/</span> <span class="nw">Software Engineering</span></p>
                 <p class="hero__lede">I have a strong interest in <strong>Frontend Development</strong> and <strong>Quality Assurance (QA) Testing</strong>, building responsive web and mobile interfaces and testing them manually and with automation.</p>
                 <div class="hero__cta">
-                    <a href="#project" class="btn btn--primary">View My Project</a>
+                    <a href="#project" class="btn btn--primary">View My Projects</a>
                     <a href="#contact" class="btn btn--outline">Get In Touch</a>
                 </div>
                 <div class="hero__links">
@@ -193,8 +193,8 @@
         <!-- Project -->
         <section class="section container" id="project">
             <header class="section__head">
-                <p class="kicker">// project</p>
-                <h2 class="section__title">Featured Project</h2>
+                <p class="kicker">// projects</p>
+                <h2 class="section__title">Projects</h2>
             </header>
             <article class="project">
                 <figure class="project__shot">
@@ -229,6 +229,42 @@
                         <li><span class="flow__name">Eligibility Screening</span><span class="flow__desc">Decision Tree Classification</span><span class="flow__tech">Classifier</span></li>
                         <li><span class="flow__name">Emergency Requests</span><span class="flow__desc">Prioritized by urgency &amp; proximity</span><span class="flow__tech">Min-Heap</span></li>
                         <li><span class="flow__name">Hospital Dashboard</span><span class="flow__desc">Blood inventory · Admin reporting</span><span class="flow__tech">React.js</span></li>
+                    </ol>
+                </div>
+            </article>
+
+            <article class="project project--drivenow">
+                <figure class="project__shot">
+                    <img src="assets/img/drivenow-banner.jpg" alt="Drive Now car rental app banner with the app logo and rental cars" width="1200" height="628" loading="lazy">
+                </figure>
+                <div class="project__main">
+                    <div class="project__badges">
+                        <span class="badge">Mobile App Project</span>
+                        <span class="chip-date">iOS + Android</span>
+                    </div>
+                    <h3 class="project__name">Drive<span class="grad">Now</span></h3>
+                    <p class="project__full">A Car Rental Application with a Native iOS Version and a Flutter Android Version</p>
+                    <p class="project__role">Platforms: <strong>iOS (SwiftUI) · Android (Flutter)</strong></p>
+                    <ul class="job__list">
+                        <li>Developed a car rental app as a native iOS version in SwiftUI and an Android version in Flutter, both connected to the same Firebase backend (Authentication and Cloud Firestore).</li>
+                        <li>Built the core rental flow: browsing available cars, viewing car details and specifications, saving favorites, booking with a pickup location chosen on a map, and viewing rental history.</li>
+                        <li>Implemented account sign-up and login, profile management, and credit card and GCash payment screens, with on-device accounts as a fallback on Android.</li>
+                    </ul>
+                    <ul class="chips">
+                        <li>SwiftUI</li><li>Flutter</li><li>Firebase</li><li>Cloud Firestore</li>
+                    </ul>
+                    <div class="project__repos">
+                        <a class="btn btn--primary btn--repo" href="https://github.com/civicbuenafe28/Drive-Now" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3Z"/></svg>GitHub Repo</a>
+                    </div>
+                </div>
+
+                <div class="project__flow" aria-label="Drive Now app flow">
+                    <p class="flow__title">app flow</p>
+                    <ol class="flow">
+                        <li><span class="flow__name">Sign Up &amp; Login</span><span class="flow__desc">Accounts · Profile · Settings</span><span class="flow__tech">Firebase Auth</span></li>
+                        <li><span class="flow__name">Browse Cars</span><span class="flow__desc">Car details · Specs · Favorites</span><span class="flow__tech">Firestore</span></li>
+                        <li><span class="flow__name">Book a Rental</span><span class="flow__desc">Pickup location on a map</span><span class="flow__tech">Maps</span></li>
+                        <li><span class="flow__name">Pay &amp; Track</span><span class="flow__desc">Credit card / GCash · My Rentals</span><span class="flow__tech">History</span></li>
                     </ol>
                 </div>
             </article>

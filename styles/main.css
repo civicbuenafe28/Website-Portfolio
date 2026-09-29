@@ -295,6 +295,7 @@ h1, h2, h3 { line-height: 1.15; text-wrap: balance; }
 }
 .project__shot img { width: 100%; height: auto; aspect-ratio: 1200 / 628; object-fit: cover; transition: transform .6s ease; }
 .project:hover .project__shot img { transform: scale(1.015); }
+.project + .project { margin-top: 32px; }
 .project__badges { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .badge {
 	padding: 5px 12px; border-radius: 999px; font-family: var(--f-mono); font-size: .82rem; letter-spacing: .06em; text-transform: uppercase;

@@ -51,6 +51,17 @@
   toggle?.addEventListener('click', () => setMenu(!links.classList.contains('is-open')));
   $$('a', links).forEach(a => a.addEventListener('click', () => setMenu(false)));
 
+  /* ---- email app chooser ---- */
+  const emailDialog = $('#email-dialog');
+  const emailDialogClose = $('#email-dialog-close');
+  $$('[data-email-trigger]').forEach(trigger => trigger.addEventListener('click', () => {
+    if (typeof emailDialog?.showModal === 'function') emailDialog.showModal();
+  }));
+  emailDialogClose?.addEventListener('click', () => emailDialog.close());
+  emailDialog?.addEventListener('click', event => {
+    if (event.target === emailDialog) emailDialog.close();
+  });
+
   /* ---- back-to-top links ---- */
   $$('a[href="#top"]').forEach(link => link.addEventListener('click', event => {
     event.preventDefault();

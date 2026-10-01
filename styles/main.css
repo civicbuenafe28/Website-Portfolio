@@ -168,10 +168,12 @@ h1, h2, h3 { line-height: 1.15; text-wrap: balance; }
 .hero__email {
 	display: inline-flex; align-items: center; gap: 10px; min-height: 46px; padding: 0 16px 0 12px; border-radius: 12px;
 	font-family: var(--f-mono); font-size: .92rem; color: var(--text-2);
-	background: rgba(13, 22, 38, .7); border: 1px solid var(--line-strong);
+	background: rgba(13, 22, 38, .7); border: 1px solid var(--line-strong); cursor: pointer;
+	transition: color .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
 .hero__email svg { flex: none; width: 20px; height: 20px; fill: none; stroke: var(--pink); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .hero__email-text { user-select: all; overflow-wrap: anywhere; }
+.hero__email:hover { color: var(--text); border-color: var(--cyan); transform: translateY(-2px); box-shadow: 0 0 18px rgba(94, 231, 247, .2); }
 
 .hero__visual { position: relative; justify-self: center; width: min(100%, 380px); }
 .avatar { position: relative; aspect-ratio: 1; border-radius: 50%; padding: 10px; }
@@ -514,9 +516,22 @@ h1, h2, h3 { line-height: 1.15; text-wrap: balance; }
 }
 .contact__label { font-family: var(--f-mono); font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .contact__value { font-weight: 600; font-size: 1.05rem; overflow-wrap: anywhere; user-select: all; }
+.contact__email { padding: 0; border: 0; background: none; color: var(--text); text-align: left; cursor: pointer; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: color .2s ease, text-decoration-color .2s ease; }
+.contact__email:hover { color: var(--cyan); text-decoration-color: currentColor; }
 .contact__social { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 18px; }
 @media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
 @media (max-width: 420px) { .contact__row { grid-template-columns: 1fr auto; } .contact__label { grid-column: 1 / -1; } }
+
+/* email app chooser */
+.email-dialog { width: min(92vw, 440px); padding: 0; border: 1px solid var(--line-strong); border-radius: 20px; background: var(--panel-solid); color: var(--text); box-shadow: 0 24px 80px rgba(0, 0, 0, .6); }
+.email-dialog::backdrop { background: rgba(1, 5, 12, .78); backdrop-filter: blur(5px); }
+.email-dialog__content { position: relative; padding: 30px; }
+.email-dialog__close { position: absolute; top: 12px; right: 14px; width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--text-2); font-size: 1.5rem; line-height: 1; cursor: pointer; }
+.email-dialog__close:hover { border-color: var(--cyan); color: var(--cyan); }
+.email-dialog h2 { margin-top: 8px; font-family: var(--f-display); font-size: 1.35rem; }
+.email-dialog__address { margin-top: 6px; color: var(--text-2); overflow-wrap: anywhere; }
+.email-dialog__options { display: grid; gap: 10px; margin-top: 22px; }
+.email-dialog__options .btn { width: 100%; }
 
 /* footer */
 .footer { border-top: 1px solid var(--line); background: rgba(5, 11, 20, .8); }

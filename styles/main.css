@@ -523,16 +523,6 @@ h1, h2, h3 { line-height: 1.15; text-wrap: balance; }
 @media (max-width: 420px) { .contact__row { grid-template-columns: 1fr auto; } .contact__label { grid-column: 1 / -1; } }
 
 /* email app chooser */
-.email-dialog { width: min(92vw, 440px); padding: 0; border: 1px solid var(--line-strong); border-radius: 20px; background: var(--panel-solid); color: var(--text); box-shadow: 0 24px 80px rgba(0, 0, 0, .6); }
-.email-dialog::backdrop { background: rgba(1, 5, 12, .78); backdrop-filter: blur(5px); }
-.email-dialog__content { position: relative; padding: 30px; }
-.email-dialog__close { position: absolute; top: 12px; right: 14px; width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--text-2); font-size: 1.5rem; line-height: 1; cursor: pointer; }
-.email-dialog__close:hover { border-color: var(--cyan); color: var(--cyan); }
-.email-dialog h2 { margin-top: 8px; font-family: var(--f-display); font-size: 1.35rem; }
-.email-dialog__address { margin-top: 6px; color: var(--text-2); overflow-wrap: anywhere; }
-.email-dialog__options { display: grid; gap: 10px; margin-top: 22px; }
-.email-dialog__options .btn { width: 100%; }
-
 /* footer */
 .footer { border-top: 1px solid var(--line); background: rgba(5, 11, 20, .8); }
 .footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-block: 24px; font-family: var(--f-mono); font-size: .9rem; color: var(--muted); }

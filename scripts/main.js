@@ -20,7 +20,7 @@
     };
 
     const draw = () => {
-      ctx.fillStyle = 'rgba(5, 11, 20, 0.2)';
+      ctx.fillStyle = document.documentElement.dataset.theme === 'light' ? 'rgba(242, 244, 250, 0.25)' : 'rgba(5, 11, 20, 0.2)';
       ctx.fillRect(0, 0, innerWidth, innerHeight);
       ctx.font = `${size - 2}px "Share Tech Mono", monospace`;
       drops.forEach((y, i) => {
@@ -39,6 +39,22 @@
       if (!document.hidden) timer = setInterval(draw, 55);
     });
   }
+
+  /* ---- light / dark theme toggle (dark is the default) ---- */
+  const root = document.documentElement;
+  const themeBtn = $('#theme-toggle');
+  const syncThemeBtn = () => {
+    const label = root.dataset.theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode';
+    themeBtn?.setAttribute('aria-label', label);
+    themeBtn?.setAttribute('title', label);
+  };
+  syncThemeBtn();
+  themeBtn?.addEventListener('click', () => {
+    const light = root.dataset.theme !== 'light';
+    if (light) root.dataset.theme = 'light'; else root.removeAttribute('data-theme');
+    try { localStorage.setItem('cvb-theme', light ? 'light' : 'dark'); } catch (e) {}
+    syncThemeBtn();
+  });
 
   /* ---- mobile menu ---- */
   const toggle = $('#menu-toggle');
